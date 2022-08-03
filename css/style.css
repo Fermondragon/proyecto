@@ -32,6 +32,16 @@ body {
   color: aqua;
 }
 
+.sectiontop5 li {
+  list-style-type: none;
+}
+
+.sectionclientes img {
+  height: 300px; /*ALTO*/
+  width: 480px; /*ANCHO*/
+  margin: 15px 20px 10px 20px;
+}
+
 #cuestionario {
   background: #03237C;
   color: #4C76EB;
@@ -43,25 +53,36 @@ body {
   align-items: center;
 }
 
+.clientes_pagina li {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+.clientes_pagina li p {
+  color: white;
+}
+.clientes_pagina li img {
+  height: 300px; /*ALTO*/
+  width: 500px; /*ANCHO*/
+  margin: 15px 20px 10px 20px;
+}
+.clientes_pagina li img:hover {
+  transform: scale(1.5);
+}
+
 #piepagina {
   background-color: #0D1C45;
   color: #4C76EB;
   margin-right: 0.5rem;
   padding: 4.5rem;
-  /*border-top: solid 15px #03237C;
-  border-right: solid 1.5rem #03237C;
-  border-bottom: solid 1.5rem #03237C;
-  border-left: solid 1.5rem #03237C;
-  border-top: solid 1rem #03237C;*/
-  font-family: "Libre Baskerville", serif;
   width: 100%;
   height: auto;
 }
-
-#piepagina a {
+#piepagina h3, #piepagina p {
   text-decoration: none;
+  font-size: small;
   color: #4C76EB;
-  font-family: "Libre Baskerville", serif;
+  font-family: "Bitter", serif;
 }
 
 /*# sourceMappingURL=style.css.map */
