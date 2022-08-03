@@ -1,0 +1,16 @@
+/*COLORES #FFFFFF #4C76EB #0641E2 #03237C #0D1C45 */
+/*font-family: 'Bitter', serif;
+font-family: 'Libre Baskerville', serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300;0,400;1,400;1,600&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+*{
+    margin: 0 ;
+    padding: 0 ;
+    box-sizing: border-box;
+}
+body{
+    color: #0D1C45;
+    width: 100%;
+    height: 100vh;
+}

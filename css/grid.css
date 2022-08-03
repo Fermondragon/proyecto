@@ -1,0 +1,188 @@
+/*COLORES #FFFFFF #4C76EB #0641E2 #03237C #0D1C45 */
+/*font-family: 'Bitter', serif;
+font-family: 'Libre Baskerville', serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300;0,400;1,400;1,600&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+*{
+    margin: 0 ;
+    padding: 0 ;
+    box-sizing: border-box;
+}
+body{
+    background-color: #03237C;
+    width: 100%;
+    height: 100vh;
+}
+.barra_navegacion{
+    width: 100%;
+    margin-right: .5rem;
+    margin-left: .5rem;
+    padding: 1rem;  
+    grid-area: b-nav; 
+    position: fixed;
+    top: 5%; 
+    
+
+    /*
+    display: flex;  
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    */
+}
+.barra_navegacion ul{
+    list-style-type: none ;
+    display: flex;  
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.navbar a{
+    text-decoration: none ;
+    color: #4C76EB;
+    font-size: x-large;
+    font-weight: bold;
+    padding: 1rem ;
+    margin-left: 0.5rem;   
+    font-family: 'Libre Baskerville', serif; 
+}
+.navbar a:hover{
+    color: aqua;
+}
+#grillaindex{
+    display: grid;
+    width:100%;
+    grid-template-areas: 
+    "b-nav      b-nav       b-nav"
+    "main       main        main"
+    "top5       top5        top5"
+    "clientes   clientes    clientes"
+    "piepag     piepag      piepag";
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-row-gap: 2rem;
+}
+.main{
+    color: #4C76EB;
+    grid-area: main;
+    position: absolute;
+    top: 40%;
+    margin: 5%;
+    font-size: large;
+}
+.sectiontop5{
+    color: #4C76EB;
+    justify-self: center;
+    grid-area: top5;
+    position: absolute;
+    top: 20rem;
+    margin-top: 10rem;
+    font-size: large;
+}
+.top5 li{
+    list-style-type: none;
+}
+.sectionclientes{
+    color: #4C76EB;
+    grid-area: clientes;
+    justify-self: center;
+    position: absolute;
+    top: 200rem;
+    margin: 10%;
+}
+.sectionclientes p{
+    font-size: large;
+}
+.carousel-item img{
+    
+    height: 550px; 
+    width: 750px;  
+    margin: 1.5rem 1rem 2.5rem 1rem;
+}
+#piepagina{
+    grid-area: piepag;
+    position: absolute;
+    top: 260rem;
+    background-color: #0D1C45;
+    color: #4C76EB;
+    margin-right: .5rem;
+    margin-left: .5rem;
+    margin-bottom: 1rem;
+    padding: 1rem;  
+}
+
+@media (max-width:992px){
+    #grillaindex{
+        display: grid;
+        width:100%;
+        grid-template-areas: 
+        "b-nav      b-nav       b-nav"
+        "main       main        main"
+        "top5       top5        top5"
+        "clientes   clientes    clientes"
+        "piepag     piepag      piepag";
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(5,1fr);
+        grid-row-gap: 2rem;
+    }
+    /*.c-i img{
+        height: 300px; 
+        width: 500px;  
+        margin: 1.5rem 1rem 2.5rem 1rem;
+    }*/
+
+    .sectionclientes{
+        grid-area: clientes;
+        justify-self: stretch;
+        position: absolute;
+        top: 130rem;
+    }
+    #piepagina{
+        grid-area: piepag;
+        position: absolute;
+        top: 280rem;
+    }
+
+}
+@media(max-width:576px ){
+    /*.barra_navegacion ul{
+        list-style-type: none ;
+        display: flex;  
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }*/
+    .main{
+        grid-area: main;
+        position: absolute;
+        top: 62%;
+    }
+    .sectiontop5{
+        justify-self: center;
+        grid-area: top5;
+        position: absolute;
+        top: 25rem;
+        margin-top: 15rem;
+    }
+    .sectionclientes{
+        grid-area: clientes;
+        justify-self: stretch;
+        position: absolute;
+        top: 100rem;
+    }
+    /*.c-i img{
+        height: 150px; 
+        width: 250px;  
+        margin: 1.5rem 1rem 2.5rem 1rem;
+    }*/
+
+    #piepagina{
+        grid-area: piepag;
+        position: absolute;
+        top: 195rem;
+    }
+
+}

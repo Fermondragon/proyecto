@@ -1,0 +1,273 @@
+/*COLORES #FFFFFF #4C76EB #0641E2 #03237C #0D1C45 */
+/*font-family: 'Bitter', serif;
+font-family: 'Libre Baskerville', serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300;0,400;1,400;1,600&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+*{
+    margin: 0 ;
+    padding: 0 ;
+    box-sizing: border-box;
+}
+/*img { 
+    padding: 20px ;
+}
+body {
+    margin-top: 50px;
+    background-image: url("../imagenes/maderafondo.jpg");
+    background-size: cover;
+    background-color: #03237C;
+    position: relative;
+}*/
+body{
+    background-color: #03237C;
+    width: 100%;
+    height: 100vh;
+}
+#encabezado{
+    /*
+    margin-bottom: 50px;
+    margin-top: 15px ;
+    margin-left: 10px;
+    
+    border-bottom: solid 10px #03237C;
+    border-left: solid 0.5rem #03237C;
+    border-right: solid 25px #03237C;
+    border-top: solid .5rem #03237C;*/
+    font-family: 'Libre Baskerville', serif;
+    
+    background-color: white;
+    width: 100%;
+  
+    /*display: grid;
+    
+    width: 100%;
+    
+    justify-items: stretch;*/
+
+}
+.barra_navegacion{
+    display: flex;  
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    padding: .5rem;
+}
+.barra_navegacion ul{
+    list-style-type: none ;
+    display: flex;  
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+        
+}
+.barranav{
+    display: inline-block;
+    /*border: solid 5px #03237C;
+    margin-right: 90px;*/
+}
+.barranav a{
+    text-decoration: none ;
+    color: #4C76EB;
+    font-size: x-large;
+    font-weight: bold;
+    padding: .5rem ;  
+}
+.navbar a:hover{
+    color: aqua;
+}
+.top5 li{
+    list-style-type: none;
+    display: inline-block;
+}
+.clientes li{
+    list-style-type: none;
+    
+}
+
+section,main,div  {
+    color: white;
+    font-family: 'Libre Baskerville', serif;
+    /*background-color: #4C76EB;
+    
+    border-top: solid 20% #4C76EB;
+    border-bottom: solid 20% #4C76EB;
+    padding: 20%;
+    */
+    margin-left: 10%;
+    margin-right: 10%;
+
+    
+}
+.main{
+    justify-items: center;
+}
+main h2{
+    margin-top: 5%;
+    padding: 20% 0 10% 0;
+
+}
+main p{
+    padding: 20% 0 10% 0;
+    
+}
+.modelo, .clientes{
+    list-style-type: none;
+    margin: 1.5rem;
+    justify-self: center;
+}
+.modelo li:hover{
+    transform: scale(2);
+}
+.sectionclientes{
+    justify-items: center;
+}
+.c-i img{
+    height: 350px; 
+    width: 550px;  
+    margin: 1.5rem 1rem 2.5rem 1rem;
+}
+.top5, .modelo li, .clientes li{
+    display: inline-block;
+}
+.modelo li img{
+    height: 300px; /*ALTO*/
+    width: 500px;  /*ANCHO*/
+    margin: 10px 20px 10px 20px;
+}
+
+
+
+#cuestionario{
+    background: #03237C;
+    padding: 50px;
+    margin: 1rem 1.5rem 1rem 1.5rem;
+    display: flex;  
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#piepagina{
+    background-color: #0D1C45;
+    color: #4C76EB;
+    margin-right: 0.5rem ;
+    padding: 4.5rem;
+    /*border-top: solid 15px #03237C;*/
+    border-right: solid 1.5rem #03237C;
+    border-bottom: solid 1.5rem #03237C;
+    border-left: solid 1.5rem #03237C;
+    border-top: solid 1rem #03237C;
+    font-family: 'Libre Baskerville', serif;
+    width: auto;
+    height: auto;
+
+}
+/*#piepagina h5{
+    color: #4C76EB;
+    font-family: 'Libre Baskerville', serif;
+    line-height: 50px;
+}*/
+#piepagina a{
+    text-decoration: none ;
+    color: #4C76EB;
+    font-family: 'Libre Baskerville', serif;
+}
+
+#grillaindex{
+    display: grid;
+    width: 100%;
+    /*margin: 0px auto;*/
+    grid-template-areas: 
+    "barranav   barranav    barranav"
+    "main       main        main"
+    "top5       top5        top5"
+    "clientes       clientes        clientes"
+    "piepagina  piepagina   piepagina"    ;
+    grid-template-columns: auto 1fr 1fr;
+    grid-template-rows: auto 1fr 2fr 2fr auto;
+    grid-row-gap: 2rem;
+
+
+}
+#encabezado{
+    grid-area: encabezado;
+}
+.barra_navegacion{
+    grid-area: barranav;
+}
+.main{
+    grid-area: main;
+}
+.sectiontop5{
+    grid-area: top5;
+}
+.sectionclientes{
+    grid-area: clientes;
+}
+#piepagina{
+    grid-area: piepagina;
+}
+
+@media(max-width:992px ){
+    #grillaindex{
+        
+        grid-template-areas: 
+        "barranav   barranav"
+        "main       clientes"
+        "top5       clientes"
+        "top5       clientes"
+        "piepagina  piepagina"    ;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto 1fr 1fr 1fr auto;
+    }
+
+
+    .c-i img{
+        height: 250px; 
+        width: 450px;  
+        margin: 1.5rem 1rem 2.5rem 1rem;
+    }
+
+    .sectionclientes{
+        grid-area: clientes;
+        justify-self: stretch;
+        position: absolute;
+        top: 130rem;
+    }
+    #piepagina{
+        grid-area: piepag;
+        position: absolute;
+        top: 280rem;
+    }
+
+
+
+
+}
+
+@media(max-width:576px ){
+    #grillaindex{
+        grid-template-areas: 
+        "barranav"
+        "main"
+        "top5"
+        "clientes"
+        "piepagina"  ;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr 1fr 1fr auto;
+    }
+
+    .sectionclientes{
+        grid-area: clientes;
+        justify-self: stretch;
+        position: absolute;
+        top: 100rem;
+    }
+    .c-i img{
+        height: 150px; 
+        width: 250px;  
+        margin: 1.5rem 1rem 2.5rem 1rem;
+    }
+}
