@@ -1,0 +1,32 @@
+
+.modelo{
+    width: 100%;
+    li{
+        list-style-type: none;
+        p{
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+.modelos_main{
+    margin-top: 8.5rem;
+    margin-left: 2rem;
+    margin-right: 10rem;
+}
+.modelos_h3{
+    margin-top: 1rem;
+    margin-left: 2rem;
+    margin-bottom: 1.5rem;
+}
+@media(max-width:576px){
+    .modelo{
+        width: 100%;
+        li{
+            picture{
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+}

@@ -29,19 +29,97 @@ body {
 }
 
 .navbar a:hover {
-  color: aqua;
+  color: #4C76EB;
 }
 
+.navbar img {
+  /*@include img_tam(210px,100px);*/
+  height: 100px;
+  width: 210px; /*ANCHO*/
+}
+
+#grillaindex {
+  width: 100%;
+}
+
+.index_main {
+  width: 90%;
+  margin-top: 8.5rem;
+  margin-left: 2rem;
+  margin-right: 10rem;
+}
+.index_main p {
+  width: 90%;
+}
+
+.sectiontop5 h4 {
+  margin-left: 3rem;
+}
 .sectiontop5 li {
   list-style-type: none;
+  margin: 2rem;
 }
 
+.sectionclientes {
+  width: 90%;
+}
+.sectionclientes h4 {
+  margin-left: 3rem;
+  display: flex;
+  justify-content: flex-start;
+}
 .sectionclientes img {
-  height: 300px; /*ALTO*/
-  width: 480px; /*ANCHO*/
-  margin: 15px 20px 10px 20px;
+  height: 250px; /*ALTO*/
+  width: 550px; /*ANCHO*/
+  margin-right: 3.5rem;
+  margin-left: 3rem;
+  display: flex;
+  justify-content: center;
 }
 
+@media (max-width: 992px) {
+  .sectionclientes {
+    width: 90%;
+  }
+  .sectionclientes h4 {
+    margin-left: 3rem;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .sectionclientes img {
+    height: 200px; /*ALTO*/
+    width: 500px; /*ANCHO*/
+    margin-right: 3.5rem;
+    margin-left: 3rem;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 576px) {
+  .sectionclientes {
+    width: 95%;
+  }
+  .sectionclientes h4 {
+    margin-left: 2.5rem;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .sectionclientes img {
+    height: 130px; /*ALTO*/
+    width: 250px; /*ANCHO*/
+    margin-right: 3rem;
+    margin-left: 2.5rem;
+    display: flex;
+    justify-content: center;
+  }
+  .sectiontop5 {
+    width: 95%;
+  }
+  .sectiontop5 li {
+    display: flex;
+    justify-content: center;
+  }
+}
 #cuestionario {
   background: #03237C;
   color: #4C76EB;
@@ -53,6 +131,18 @@ body {
   align-items: center;
 }
 
+.contacto_main {
+  margin-top: 8.5rem;
+  margin-left: 2rem;
+  margin-right: 10rem;
+}
+
+.clientes_main {
+  margin-top: 8.5rem;
+  margin-left: 2rem;
+  margin-right: 10rem;
+}
+
 .clientes_pagina li {
   list-style-type: none;
   display: flex;
@@ -62,27 +152,129 @@ body {
   color: white;
 }
 .clientes_pagina li img {
-  height: 300px; /*ALTO*/
-  width: 500px; /*ANCHO*/
+  /*@include img_tam(500px,300px);*/
+  height: 300px;
+  width: 500px;
   margin: 15px 20px 10px 20px;
 }
 .clientes_pagina li img:hover {
   transform: scale(1.5);
 }
 
+@media (max-width: 992px) {
+  .clientes_pagina li {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+  }
+  .clientes_pagina li p {
+    color: white;
+  }
+  .clientes_pagina li img {
+    height: 300px; /*ALTO*/
+    width: 500px; /*ANCHO*/
+    margin: 15px 20px 10px 20px;
+  }
+}
+@media (max-width: 576px) {
+  .clientes_main {
+    width: 95%;
+    margin-left: 2rem;
+    font-family: "Bitter", serif;
+    margin-top: 8.5rem;
+    margin-left: 2rem;
+    margin-right: 10rem;
+  }
+  .clientes_pagina li {
+    list-style-type: none;
+  }
+  .clientes_pagina li p {
+    color: white;
+  }
+  .clientes_pagina li img {
+    height: 170px; /*ALTO*/
+    width: 330px; /*ANCHO*/
+    margin: 1rem;
+  }
+  div {
+    width: 95%;
+    margin-left: 2rem;
+    font-family: "Bitter", serif;
+    margin-right: 3rem;
+  }
+}
+.modelo {
+  width: 100%;
+}
+.modelo li {
+  list-style-type: none;
+}
+.modelo li p {
+  display: flex;
+  justify-content: center;
+}
+
+.modelos_main {
+  margin-top: 8.5rem;
+  margin-left: 2rem;
+  margin-right: 10rem;
+}
+
+.modelos_h3 {
+  margin-top: 1rem;
+  margin-left: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 576px) {
+  .modelo {
+    width: 100%;
+  }
+  .modelo li picture {
+    display: flex;
+    justify-content: center;
+  }
+}
+.nosotros_main {
+  margin-top: 8.5rem;
+  margin-left: 2rem;
+  margin-right: 10rem;
+}
+
+/*.video{
+    width="500" ;
+    height="400";
+}*/
+.video {
+  width: 90%;
+  display: flex;
+  justify-self: center;
+}
+
 #piepagina {
-  background-color: #0D1C45;
-  color: #4C76EB;
+  background-image: linear-gradient(to top, #0D1C45, white);
   margin-right: 0.5rem;
-  padding: 4.5rem;
+  padding: 3.5rem;
   width: 100%;
   height: auto;
+}
+#piepagina img {
+  height: 22px; /*ALTO*/
+  width: 22px; /*ANCHO*/
+  margin: 5px 15px 5px 10px;
+}
+#piepagina .flecha {
+  display: flex;
+  justify-content: flex-end;
+  /*height: 25px; ALTO
+  width: 25px;*/
 }
 #piepagina h3, #piepagina p {
   text-decoration: none;
   font-size: small;
-  color: #4C76EB;
+  color: rgb(27, 27, 27);
   font-family: "Bitter", serif;
+  align-items: flex-end;
 }
 
 /*# sourceMappingURL=style.css.map */

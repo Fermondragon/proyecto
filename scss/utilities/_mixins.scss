@@ -1,0 +1,10 @@
+@mixin img_tam ($width, $height){
+    width: $width;
+    height: $height;
+}
+
+@mixin tit_marg ($mtop, $mleft, $mright){
+    margin-top: $mtop;
+    margin-left: $mleft;
+    margin-right: $mright;
+}

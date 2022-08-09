@@ -1,13 +1,83 @@
+#grillaindex{
+    width: 100%;
+}
+.index_main{
+    width: 90%;
+    
+    margin-top: 8.5rem;
+    margin-left: 2rem;
+    margin-right: 10rem;
+    p{
+        width: 90%;
+        
+    }
+}
 .sectiontop5{
+    h4{
+        margin-left: 3rem;
+    }
     li{
         list-style-type: none;
+        margin: 2rem;
     }
 }
 
 .sectionclientes{
+    width: 90%;
+    h4{
+        margin-left: 3rem;
+        display: flex;
+        justify-content: flex-start;    
+    }
     img{
-        height: 300px; /*ALTO*/
-        width: 480px;  /*ANCHO*/
-        margin: 15px 20px 10px 20px;
+        height: 250px; /*ALTO*/
+        width: 550px;  /*ANCHO*/
+        margin-right: 3.5rem;
+        margin-left: 3rem;
+        display: flex;
+        justify-content: center;
+    }
+}
+@media(max-width:992px){
+    .sectionclientes{
+        width: 90%;
+        h4{
+            margin-left: 3rem;
+            display: flex;
+            justify-content: flex-start;    
+        }
+        img{
+            height: 200px; /*ALTO*/
+            width: 500px;  /*ANCHO*/
+            margin-right: 3.5rem;
+            margin-left: 3rem;
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+@media(max-width:576px){
+    .sectionclientes{
+        width: 95%;
+        h4{
+            margin-left: 2.5rem;
+            display: flex;
+            justify-content: flex-start;    
+        }
+        img{
+            height: 130px; /*ALTO*/
+            width: 250px;  /*ANCHO*/
+            margin-right: 3rem;
+            margin-left: 2.5rem;
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .sectiontop5{
+        width: 95%;
+        li{
+            display: flex;
+            justify-content: center;  
+        }
     }
 }
