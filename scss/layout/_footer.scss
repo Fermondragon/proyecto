@@ -1,13 +1,13 @@
 #piepagina{
-    background-image: linear-gradient(to top, #0D1C45,white);
-    
+    background-image: linear-gradient(to top, #03237C,white);
     margin-right: 0.5rem ;
     padding: 3.5rem;
     width: 100%;
     height: auto;
     img{
-        height: 22px; /*ALTO*/
-        width: 22px;  /*ANCHO*/
+        @include img_tam(22px,22px);
+        /*height: 22px; ALTO
+        width: 22px;  ANCHO*/
         margin: 5px 15px 5px 10px;
     }
     .flecha{

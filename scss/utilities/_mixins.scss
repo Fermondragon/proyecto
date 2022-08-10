@@ -3,8 +3,7 @@
     height: $height;
 }
 
-@mixin tit_marg ($mtop, $mleft, $mright){
+@mixin tit_marg ($mtop, $mleft){
     margin-top: $mtop;
     margin-left: $mleft;
-    margin-right: $mright;
 }

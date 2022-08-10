@@ -33,9 +33,10 @@ body {
 }
 
 .navbar img {
-  /*@include img_tam(210px,100px);*/
+  width: 210px;
   height: 100px;
-  width: 210px; /*ANCHO*/
+  /*height: 100px; 
+  width: 210px;  ANCHO*/
 }
 
 #grillaindex {
@@ -45,75 +46,88 @@ body {
 .index_main {
   width: 90%;
   margin-top: 8.5rem;
-  margin-left: 2rem;
-  margin-right: 10rem;
+  margin-left: 3rem;
+  /*margin-top: 8.5rem;
+  margin-left: 3rem;*/
 }
 .index_main p {
-  width: 90%;
+  width: 95%;
 }
 
-.sectiontop5 h4 {
+.sectiontop5 h4, .sectiontop5 li {
+  margin-top: 1.5rem;
   margin-left: 3rem;
 }
 .sectiontop5 li {
   list-style-type: none;
-  margin: 2rem;
 }
 
 .sectionclientes {
-  width: 90%;
+  width: 100%;
+  /*.carousel{
+      display: flex;
+      justify-self: center;
+  }
+  .carousel-item{
+      @extend .carousel-inner;
+  }*/
 }
-.sectionclientes h4 {
+.sectionclientes h4, .sectionclientes .sectiontop5 li, .sectiontop5 .sectionclientes li {
+  margin-top: 0.5rem;
   margin-left: 3rem;
-  display: flex;
-  justify-content: flex-start;
 }
 .sectionclientes img {
-  height: 250px; /*ALTO*/
-  width: 550px; /*ANCHO*/
-  margin-right: 3.5rem;
-  margin-left: 3rem;
-  display: flex;
-  justify-content: center;
+  width: 640px;
+  height: 350px;
+  margin-top: 2rem;
+  margin-left: 5.5rem;
+  margin-bottom: 2rem;
+  /*height: 250px; 
+  width: 550px;  ANCHO*/
 }
 
 @media (max-width: 992px) {
-  .sectionclientes {
-    width: 90%;
+  #grillaindex {
+    width: auto;
   }
-  .sectionclientes h4 {
+  .sectionclientes h4, .sectionclientes .sectiontop5 li, .sectiontop5 .sectionclientes li {
     margin-left: 3rem;
-    display: flex;
-    justify-content: flex-start;
+    /*display: flex;
+    justify-content: flex-start;  */
   }
   .sectionclientes img {
-    height: 200px; /*ALTO*/
-    width: 500px; /*ANCHO*/
-    margin-right: 3.5rem;
+    width: 500px;
+    height: 200px;
+    margin-top: 2rem;
+    margin-left: 5.5rem;
+    /*height: 200px;
+    width: 500px;  ANCHO*/
+    /*margin-right: 3.5rem;
     margin-left: 3rem;
     display: flex;
-    justify-content: center;
+    justify-content: center;*/
   }
 }
 @media (max-width: 576px) {
-  .sectionclientes {
-    width: 95%;
+  #grillaindex {
+    width: auto;
   }
-  .sectionclientes h4 {
-    margin-left: 2.5rem;
-    display: flex;
-    justify-content: flex-start;
-  }
-  .sectionclientes img {
-    height: 130px; /*ALTO*/
-    width: 250px; /*ANCHO*/
-    margin-right: 3rem;
+  .sectionclientes h4, .sectionclientes .sectiontop5 li, .sectiontop5 .sectionclientes li {
     margin-left: 2.5rem;
     display: flex;
     justify-content: center;
   }
-  .sectiontop5 {
-    width: 95%;
+  .sectionclientes img {
+    width: 250px;
+    height: 130px;
+    margin-top: 2rem;
+    margin-left: 2.5rem;
+    /*height: 130px; 
+    width: 250px;  ANCHO
+    margin-right: 3rem;
+    margin-left: 2.5rem;
+    display: flex;
+    justify-content: center;*/
   }
   .sectiontop5 li {
     display: flex;
@@ -121,8 +135,8 @@ body {
   }
 }
 #cuestionario {
-  background: #03237C;
-  color: #4C76EB;
+  background-image: radial-gradient(rgb(27, 25, 56), #03237C, rgba(76, 118, 235, 0.7725490196));
+  color: rgb(27, 27, 27);
   padding: 3.5rem;
   margin: 1rem 1.5rem 1rem 1.5rem;
   display: flex;
@@ -139,8 +153,7 @@ body {
 
 .clientes_main {
   margin-top: 8.5rem;
-  margin-left: 2rem;
-  margin-right: 10rem;
+  margin-left: 3rem;
 }
 
 .clientes_pagina li {
@@ -152,13 +165,20 @@ body {
   color: white;
 }
 .clientes_pagina li img {
-  /*@include img_tam(500px,300px);*/
-  height: 300px;
   width: 500px;
+  height: 300px;
+  /*height: 300px; 
+  width: 500px;  */
   margin: 15px 20px 10px 20px;
 }
 .clientes_pagina li img:hover {
   transform: scale(1.5);
+}
+
+.clientes_fin {
+  /*@include tit_marg(.5rem,3.5rem);
+  margin-right: 5rem;*/
+  margin: 0.5rem 5rem 5rem 3.5rem;
 }
 
 @media (max-width: 992px) {
@@ -171,36 +191,45 @@ body {
     color: white;
   }
   .clientes_pagina li img {
-    height: 300px; /*ALTO*/
-    width: 500px; /*ANCHO*/
-    margin: 15px 20px 10px 20px;
+    width: 400px;
+    height: 200px;
+    /*height: 300px; ALTO*/
+    /*width: 500px;  ANCHO*/
+    margin: 15px 5px 10px 2.5px;
+  }
+  .clientes_fin {
+    /*@include tit_marg(.5rem,3.5rem);
+    margin-right: 5rem;*/
+    margin: 0.5rem 2rem 5rem 1rem;
   }
 }
 @media (max-width: 576px) {
-  .clientes_main {
-    width: 95%;
-    margin-left: 2rem;
-    font-family: "Bitter", serif;
+  #grillaclientes {
+    width: auto;
+  }
+  #grillaclientes .clientes_main {
+    margin: 8.5rem 2rem none 1.5rem;
+    /*margin-left: 2rem;
+    font-family: 'Bitter', serif;
     margin-top: 8.5rem;
     margin-left: 2rem;
-    margin-right: 10rem;
+    margin-right: 10rem;*/
   }
-  .clientes_pagina li {
+  #grillaclientes .clientes_pagina li {
     list-style-type: none;
   }
-  .clientes_pagina li p {
+  #grillaclientes .clientes_pagina li p {
     color: white;
   }
-  .clientes_pagina li img {
-    height: 170px; /*ALTO*/
-    width: 330px; /*ANCHO*/
-    margin: 1rem;
+  #grillaclientes .clientes_pagina li img {
+    width: 200px;
+    height: 80px;
+    margin: 15px 10px 10px 1.5px;
+    /*height: 170px; ALTO*/
+    /*width: 330px;  ANCHO*/
   }
-  div {
-    width: 95%;
-    margin-left: 2rem;
-    font-family: "Bitter", serif;
-    margin-right: 3rem;
+  #grillaclientes .clientes_fin {
+    margin: 0.5rem 1.5rem 3rem 1.5rem;
   }
 }
 .modelo {
@@ -237,30 +266,67 @@ body {
 }
 .nosotros_main {
   margin-top: 8.5rem;
-  margin-left: 2rem;
-  margin-right: 10rem;
+  margin-left: 3rem;
+  margin-right: 5rem;
 }
 
-/*.video{
-    width="500" ;
-    height="400";
-}*/
-.video {
-  width: 90%;
-  display: flex;
-  justify-self: center;
+.nosotros_video {
+  margin-top: 2.5rem;
+  margin-left: 3rem;
+}
+.nosotros_video iframe {
+  width: 800px;
+  height: 500px;
 }
 
+.nosotros_final {
+  margin-top: 2.5rem;
+  margin-left: 3rem;
+  margin-right: 5rem;
+}
+
+@media (max-width: 992px) {
+  .nosotros_main {
+    margin-top: 8.5rem;
+    margin-left: 3rem;
+    margin-right: 5rem;
+  }
+  .nosotros_video {
+    margin-top: 2.5rem;
+    margin-left: 3rem;
+  }
+  .nosotros_video iframe {
+    width: 500px;
+    height: 200px;
+  }
+  .nosotros_final {
+    margin-top: 2.5rem;
+    margin-left: 3rem;
+    margin-right: 5rem;
+  }
+}
+@media (max-width: 576px) {
+  .nosotros_video {
+    margin-top: 2.5rem;
+    margin-left: 3rem;
+  }
+  .nosotros_video iframe {
+    width: 350px;
+    height: 150px;
+  }
+}
 #piepagina {
-  background-image: linear-gradient(to top, #0D1C45, white);
+  background-image: linear-gradient(to top, #03237C, white);
   margin-right: 0.5rem;
   padding: 3.5rem;
   width: 100%;
   height: auto;
 }
 #piepagina img {
-  height: 22px; /*ALTO*/
-  width: 22px; /*ANCHO*/
+  width: 22px;
+  height: 22px;
+  /*height: 22px; ALTO
+  width: 22px;  ANCHO*/
   margin: 5px 15px 5px 10px;
 }
 #piepagina .flecha {
