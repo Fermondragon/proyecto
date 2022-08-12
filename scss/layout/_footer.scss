@@ -28,3 +28,12 @@
         
     }
 }
+@media(max-width:576px){
+    #piepagina{
+        background-image: linear-gradient(to top, #4C76EB,white);
+        margin-right: 0.5rem ;
+        padding: 3.5rem;
+        width: 100%;
+        height: auto;
+    }
+}

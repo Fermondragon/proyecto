@@ -135,7 +135,6 @@ body {
   }
 }
 #cuestionario {
-  background-image: radial-gradient(rgb(27, 25, 56), #03237C, rgba(76, 118, 235, 0.7725490196));
   color: rgb(27, 27, 27);
   padding: 3.5rem;
   margin: 1rem 1.5rem 1rem 1.5rem;
@@ -341,6 +340,15 @@ body {
   color: rgb(27, 27, 27);
   font-family: "Bitter", serif;
   align-items: flex-end;
+}
+@media (max-width: 576px) {
+  #piepagina {
+    background-image: linear-gradient(to top, #4C76EB, white);
+    margin-right: 0.5rem;
+    padding: 3.5rem;
+    width: 100%;
+    height: auto;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
