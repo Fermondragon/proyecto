@@ -1,13 +1,31 @@
 
 .modelo{
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     li{
         list-style-type: none;
-        p{
+        /*p{
             display: flex;
             justify-content: center;
-        }
+        }*/
     }
+}
+.modelos_var{
+    width: 95%;
+    li{
+        list-style-type: none;
+        margin-bottom: 1rem;
+       
+    }
+}
+.pict{
+    padding: 1.5rem;
+    border: .05px solid rgb(253, 252, 250);
+    margin-bottom: 2rem;
+    background-color: rgb(252, 250, 250);
+    
 }
 .modelos_main{
     margin-top: 8.5rem;
