@@ -4,9 +4,6 @@
 .index_main{
     width: 90%;
     @include tit_marg(8.5rem,3rem);
-    /*margin-top: 8.5rem;
-    margin-left: 3rem;*/
-    //margin-right: 10rem;
     p{
         width: 95%;
     }
@@ -15,87 +12,63 @@
     h4{
         @include tit_marg(1.5rem,3rem);
     }
-    li{
-        list-style-type: none;
-        @extend h4;
-        //margin: 2rem;
-    }
 }
 
 .sectionclientes{
     width: 100%;
-    h4{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    h3{
         @include tit_marg(.5rem,3rem);
-        //margin-left: 3.5rem;
-        //display: flex;
-        //justify-content: flex-start;    
+        width: 100%;
     }
-    /*.carousel{
-        display: flex;
-        justify-self: center;
-    }
-    .carousel-item{
-        @extend .carousel-inner;
-    }*/
-    img{
-        @include img_tam(640px,350px);
-        @include tit_marg(2rem,5.5rem);
-        margin-bottom: 2rem;
-        /*height: 250px; 
-        width: 550px;  ANCHO*/
-        //margin-right: 3.5rem;
-        //margin-left: 5.5rem;
-        //justify-self: center;
-    }
-}
-@media(max-width:992px){
-    #grillaindex{
-        width: auto;
-    }
-    .sectionclientes{
+    ul{
+        list-style-type: none;
         
-        h4{
-            margin-left: 3rem;
-            /*display: flex;
-            justify-content: flex-start;  */  
+        .pictin {
+            
+            padding: 1.5rem;
+            border: .05px solid rgb(253, 252, 250);
+            margin-bottom: 2rem;
+            background-color: rgb(252, 250, 250);
+            img{
+                @include img_tam(610px,320px);
+            }
         }
-        img{
-            @include img_tam(500px,200px);
-            @include tit_marg(2rem,5.5rem);
-            /*height: 200px;
-            width: 500px;  ANCHO*/
-            /*margin-right: 3.5rem;
-            margin-left: 3rem;
-            display: flex;
-            justify-content: center;*/
-        }
+        
     }
+    
+    
 }
-@media(max-width:576px){
+
+@media(max-width:580px){
     #grillaindex{
         width: auto;
     }
     .sectionclientes{
-        h4{
-            margin-left: 2.5rem;
-            display: flex;
-            justify-content: center;    
+        width: 95%;
+        h3{
+            @include tit_marg(.5rem,3rem);
         }
-        img{
-            @include img_tam(250px,130px);
-            @include tit_marg(2rem,2.5rem);
-            /*height: 130px; 
-            width: 250px;  ANCHO
-            margin-right: 3rem;
-            margin-left: 2.5rem;
+        ul{
+            list-style-type: none;
             display: flex;
-            justify-content: center;*/
+            flex-wrap: wrap;
+            justify-content: space-around;
+            .pictin {
+                
+                padding: 1.5rem;
+                border: .05px solid rgb(253, 252, 250);
+                margin-bottom: 1rem;
+                background-color: rgb(252, 250, 250);
+                img{
+                    @include img_tam(180px,120px);
+                }
+            }
+            
         }
-    }
-    .sectiontop5{
-        li{
-            display: flex;
-            justify-content: center;  
-        }
+        
+        
     }
 }

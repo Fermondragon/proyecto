@@ -35,8 +35,6 @@ body {
 .navbar img {
   width: 210px;
   height: 100px;
-  /*height: 100px; 
-  width: 210px;  ANCHO*/
 }
 
 #grillaindex {
@@ -47,91 +45,67 @@ body {
   width: 90%;
   margin-top: 8.5rem;
   margin-left: 3rem;
-  /*margin-top: 8.5rem;
-  margin-left: 3rem;*/
 }
 .index_main p {
   width: 95%;
 }
 
-.sectiontop5 h4, .sectiontop5 li {
+.sectiontop5 h4 {
   margin-top: 1.5rem;
   margin-left: 3rem;
-}
-.sectiontop5 li {
-  list-style-type: none;
 }
 
 .sectionclientes {
   width: 100%;
-  /*.carousel{
-      display: flex;
-      justify-self: center;
-  }
-  .carousel-item{
-      @extend .carousel-inner;
-  }*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
-.sectionclientes h4, .sectionclientes .sectiontop5 li, .sectiontop5 .sectionclientes li {
+.sectionclientes h3, .sectionclientes #piepagina p, #piepagina .sectionclientes p {
   margin-top: 0.5rem;
   margin-left: 3rem;
+  width: 100%;
 }
-.sectionclientes img {
-  width: 640px;
-  height: 350px;
-  margin-top: 2rem;
-  margin-left: 5.5rem;
+.sectionclientes ul {
+  list-style-type: none;
+}
+.sectionclientes ul .pictin {
+  padding: 1.5rem;
+  border: 0.05px solid rgb(253, 252, 250);
   margin-bottom: 2rem;
-  /*height: 250px; 
-  width: 550px;  ANCHO*/
+  background-color: rgb(252, 250, 250);
+}
+.sectionclientes ul .pictin img {
+  width: 610px;
+  height: 320px;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 580px) {
   #grillaindex {
     width: auto;
   }
-  .sectionclientes h4, .sectionclientes .sectiontop5 li, .sectiontop5 .sectionclientes li {
+  .sectionclientes {
+    width: 95%;
+  }
+  .sectionclientes h3, .sectionclientes #piepagina p, #piepagina .sectionclientes p {
+    margin-top: 0.5rem;
     margin-left: 3rem;
-    /*display: flex;
-    justify-content: flex-start;  */
   }
-  .sectionclientes img {
-    width: 500px;
-    height: 200px;
-    margin-top: 2rem;
-    margin-left: 5.5rem;
-    /*height: 200px;
-    width: 500px;  ANCHO*/
-    /*margin-right: 3.5rem;
-    margin-left: 3rem;
+  .sectionclientes ul {
+    list-style-type: none;
     display: flex;
-    justify-content: center;*/
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
-}
-@media (max-width: 576px) {
-  #grillaindex {
-    width: auto;
+  .sectionclientes ul .pictin {
+    padding: 1.5rem;
+    border: 0.05px solid rgb(253, 252, 250);
+    margin-bottom: 1rem;
+    background-color: rgb(252, 250, 250);
   }
-  .sectionclientes h4, .sectionclientes .sectiontop5 li, .sectiontop5 .sectionclientes li {
-    margin-left: 2.5rem;
-    display: flex;
-    justify-content: center;
-  }
-  .sectionclientes img {
-    width: 250px;
-    height: 130px;
-    margin-top: 2rem;
-    margin-left: 2.5rem;
-    /*height: 130px; 
-    width: 250px;  ANCHO
-    margin-right: 3rem;
-    margin-left: 2.5rem;
-    display: flex;
-    justify-content: center;*/
-  }
-  .sectiontop5 li {
-    display: flex;
-    justify-content: center;
+  .sectionclientes ul .pictin img {
+    width: 180px;
+    height: 120px;
   }
 }
 #cuestionario {
@@ -150,87 +124,6 @@ body {
   margin-right: 10rem;
 }
 
-.clientes_main {
-  margin-top: 8.5rem;
-  margin-left: 3rem;
-}
-
-.clientes_pagina li {
-  list-style-type: none;
-  display: flex;
-  justify-content: center;
-}
-.clientes_pagina li p {
-  color: white;
-}
-.clientes_pagina li img {
-  width: 500px;
-  height: 300px;
-  /*height: 300px; 
-  width: 500px;  */
-  margin: 15px 20px 10px 20px;
-}
-.clientes_pagina li img:hover {
-  transform: scale(1.5);
-}
-
-.clientes_fin {
-  /*@include tit_marg(.5rem,3.5rem);
-  margin-right: 5rem;*/
-  margin: 0.5rem 5rem 5rem 3.5rem;
-}
-
-@media (max-width: 992px) {
-  .clientes_pagina li {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-  }
-  .clientes_pagina li p {
-    color: white;
-  }
-  .clientes_pagina li img {
-    width: 400px;
-    height: 200px;
-    /*height: 300px; ALTO*/
-    /*width: 500px;  ANCHO*/
-    margin: 15px 5px 10px 2.5px;
-  }
-  .clientes_fin {
-    /*@include tit_marg(.5rem,3.5rem);
-    margin-right: 5rem;*/
-    margin: 0.5rem 2rem 5rem 1rem;
-  }
-}
-@media (max-width: 576px) {
-  #grillaclientes {
-    width: auto;
-  }
-  #grillaclientes .clientes_main {
-    margin: 8.5rem 2rem none 1.5rem;
-    /*margin-left: 2rem;
-    font-family: 'Bitter', serif;
-    margin-top: 8.5rem;
-    margin-left: 2rem;
-    margin-right: 10rem;*/
-  }
-  #grillaclientes .clientes_pagina li {
-    list-style-type: none;
-  }
-  #grillaclientes .clientes_pagina li p {
-    color: white;
-  }
-  #grillaclientes .clientes_pagina li img {
-    width: 200px;
-    height: 80px;
-    margin: 15px 10px 10px 1.5px;
-    /*height: 170px; ALTO*/
-    /*width: 330px;  ANCHO*/
-  }
-  #grillaclientes .clientes_fin {
-    margin: 0.5rem 1.5rem 3rem 1.5rem;
-  }
-}
 .modelo {
   width: 100%;
   display: flex;
@@ -239,10 +132,6 @@ body {
 }
 .modelo li {
   list-style-type: none;
-  /*p{
-      display: flex;
-      justify-content: center;
-  }*/
 }
 
 .modelos_var {
@@ -342,15 +231,11 @@ body {
 #piepagina img {
   width: 22px;
   height: 22px;
-  /*height: 22px; ALTO
-  width: 22px;  ANCHO*/
   margin: 5px 15px 5px 10px;
 }
 #piepagina .flecha {
   display: flex;
   justify-content: flex-end;
-  /*height: 25px; ALTO
-  width: 25px;*/
 }
 #piepagina h3, #piepagina p {
   text-decoration: none;

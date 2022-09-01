@@ -38,14 +38,11 @@
                           <li><a class="dropdown-item" href="./modelos_varios/salas.html">Salas</a></li>
                           <li><a class="dropdown-item" href="./modelos_varios/escritorios.html">Escritorios</a></li>
                           <li><a class="dropdown-item" href="./modelos_varios/recamaras.html">Recamaras</a></li>
-                          <li>
-                            <hr class="dropdown-divider">
-                          </li>
-                          <li><a class="dropdown-item" href="secciones/modelos.html">Todos</a></li>
+                          
                         </ul>
                       </li>
                     <li class="nav-item">
-                      <a class="nav-link" aria-current="page" href="secciones/clientes.html">Clientes</a>
+                      <a class="nav-link" aria-current="page" href="secciones/modelos.html">Catalogo</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="secciones/nosotros.html">Nosotros</a>
@@ -72,110 +69,99 @@
         <section class="sectiontop5">
             <h4>Top 5 de los muebles mas pedidos</h4>
             <br>
-            <ol class="top5">
-                <li class="1top">
-                    <figure class="figure">
-                        <picture>
-                            <source media="(max-width:576px )" srcset="./imagenes/modelos/comedores/comedor3-250.jpg">
-                            <source media="(max-width:992px )" srcset="./imagenes/modelos/comedores/comedor3-500.jpg">
-                            <img src="./imagenes/modelos/comedores/comedor3-750.jpg" alt="comedor   3">
-                        </picture>
-                        <figcaption class="figure-caption text-end">comedor rustica</figcaption>
-                      </figure>
-                    
-                </li>
-                <li class="2top">
-                    <figure class="figure">
-                        <picture>
-                            <source media="(max-width:576px )" srcset="./imagenes/modelos/escritorios/escritorio7-250.jpg">
-                            <source media="(max-width:992px )" srcset="./imagenes/modelos/escritorios/escritorio7-500.jpg">
-                            <img src="./imagenes/modelos/escritorios/escritorio7-750.jpg" alt="escritorio 7">
-                        </picture>
-                        <figcaption class="figure-caption text-end">escritorio dracule</figcaption>
-                      </figure>
-                    
-                </li>
-                <li class="3top">
-                    <figure class="figure">
-                        <picture>
-                            <source media="(max-width:576px )" srcset="./imagenes/modelos/comedores/comedor10-250.jpg">
-                            <source media="(max-width:992px )" srcset="./imagenes/modelos/comedores/comedor10-500.jpg">
-                            <img src="./imagenes/modelos/comedores/comedor10-750.jpg" alt="comedor   10">
-                        </picture>
-                        <figcaption class="figure-caption text-end">comedor shanks</figcaption>
-                      </figure>
-                </li>
-
-                <li class="4top">
-                    <figure class="figure">
-                        <picture>
-                            <source media="(max-width:576px )" srcset="./imagenes/modelos/escritorios/escritorio4-250.jpg">
-                            <source media="(max-width:992px )" srcset="./imagenes/modelos/escritorios/escritorio4-500.jpg">
-                            <img src="./imagenes/modelos/escritorios/escritorio4-750.jpg" alt="escritorio 5">
-                        </picture>
-                        <figcaption class="figure-caption text-end">escritorio iruma</figcaption>
-                      </figure>
-                </li>
-
-                <li class="5top">
-                    <figure class="figure">
-                        <picture>
-                            <source media="(max-width:576px )" srcset="./imagenes/modelos/recamaras/recamara2-250.jpg">
-                            <source media="(max-width:992px )" srcset="./imagenes/modelos/recamaras/recamara2-500.jpg">
-                            <img src="./imagenes/modelos/recamaras/recamara2-750.jpg" alt="recamara 4">
-                        </picture>
-                        <figcaption class="figure-caption text-end">recamara charlotte</figcaption>
-                      </figure>
-                </li>
-            </ol>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./imagenes/modelos/comedores/comedor3-750.jpg" alt="comedor   3" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>comedor rustica</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./imagenes/modelos/escritorios/escritorio7-750.jpg" alt="escritorio 7" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>escritorio dracule</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./imagenes/modelos/comedores/comedor10-750.jpg" alt="comedor   10" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>comedor shanks</h5>
+                    </div>
+                  </div>
+                <div class="carousel-item">
+                    <img src="./imagenes/modelos/escritorios/escritorio4-750.jpg" alt="escritorio 5" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>escritorio iruma</h5>
+                    </div>
+                  </div>
+                <div class="carousel-item">
+                    <img src="./imagenes/modelos/recamaras/recamara2-750.jpg" alt="recamara 4" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>recamara charlotte</h5>
+                    </div>
+                  </div>
+                
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
         </section>
         
-        <section class="sectionclientes">
-            <br>
-            <h4>Nuestros clientes</h4>
-            <br>
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
-                  
-                </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="./imagenes/logo_liverpool.jpg" class="d-block w-85" alt="liverpool">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./imagenes/logo_mobica.jpg" class="d-block w-85" alt="mobica">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./imagenes/logo_lomas.jpg" class="d-block w-85" alt="casa de las lomas">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./imagenes/logo_palaciohierro.jpg" class="d-block w-85" alt="palacio de hierro">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./imagenes/logo_walmart.jpg" class="d-block w-85" alt="walmart">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="./imagenes/logo_sears.jpg" class="d-block w-85" alt="sears">
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
+    
+      <section class="sectionclientes">
+          <h3 class="clientes_h3">Nuestros clientes</h3>
+          <ul class="cliente cli_nomb">
+              
+              <li class="pictin sears">
+                <a href="https://www.sears.com.mx/categoria/4496/muebles/pagina=1"target="_blank">
+                <img src="./imagenes/logo_sears.jpg" alt="sears">
+                </a>
+              </li>
+              <li class="pictin walm">
+                <a href="https://www.walmart.com.mx/muebles">
+                <img src="./imagenes/logo_walmart.jpg" alt="walmart">
+                </a>
+              </li>
+              <li class="pictin liv">
+                <a href="https://www.liverpool.com.mx/tienda/Muebles/CAT860739"target="_blank">
+                  <img src="./imagenes/logo_liverpool.jpg" alt="liverpool">
+                </a>
+              </li>
+              <li class="pictin pal">
+                <a href="http://www.elpalaciodehierro.com/hogar/muebles/"target="_blank">
+                  <img src="./imagenes/logo_palaciohierro.jpg" alt="palacio de hierro">
+                </a>
+              </li>
+              <li class="pictin lomas">
+                <a href="https://www.casadelaslomas.com/?utm_term=casa%20de%20la%20lomas&utm_campaign=Brand+Terms+Lomas&utm_source=adwords&utm_medium=ppc&hsa_acc=8565832571&hsa_cam=767766692&hsa_grp=44050441370&hsa_ad=386736193631&hsa_src=g&hsa_tgt=kwd-338996437830&hsa_kw=casa%20de%20la%20lomas&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gclid=Cj0KCQjwkruVBhCHARIsACVIiOwyt78MdBxLAUlGb4ilVEwzOeBuVavBcR39PamX3Vr-v1taeIEV4ggaAg_SEALw_wcB"target="_blank">
+                  <img src="./imagenes/logo_lomas.jpg" alt="lomas">
+                </a>
+              </li>
+              <li class="pictin mob">
+                <a href="https://www.mobica.com.mx/muebles?order=OrderByTopSaleDESC"target="_blank">
+                  <img src="./imagenes/logo_mobica.jpg" alt="mobica">
+                </a>
+              </li>
 
-            
-        </section>
+          </ul>
+      </section>
+
         <footer id="piepagina">
           <a class="flecha" href="./index.html">
               <img src="./imagenes/flecha3.png" alt="flecha">
